@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'kanit-Bold';
+  src: url(/assets/fonts/Kanit-Bold.ttf) format("truetype");
+  font-weight: 200;
+}
+
+html{
+  font-family: kanit-Bold;
+  font-size: 0.5em;
+  font-weight: 140;
+  background-color: #222222;
+}
+
+h1{
+  font-size: 5em;
+  color: #e2e2e2;
+  text-transform: uppercase;
+  font-variation-settings: 'WMX2' 473.13;
+}
+
+h2 {
+  position: relative;
+  z-index: 99999;
+}
+
+h2:hover {
+  color: #F2F2E3;
+  background-size: cover;
+}
+
+header{
+  padding: 30px;
+  text-align: center;
+}
+
+header p{
+  color: #e2e2e2;
+  padding: 30px;
+    font-size: 3em;
+}
+
+header a{
+  text-decoration: none;
+  font-variation-settings: 'WMX2' 0;
+  transition: all .5s;
+}
+header a:hover{
+  font-variation-settings: 'WMX2' 500;
+}
+
+header a:nth-child(1){
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #EE964B;
+}
+header a:nth-child(2){
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #083D77;
+}
+header a:nth-child(3){
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #F95738;
+}
+
+img {
+  max-width: 278px;
+  max-height: 300px;
+}
+
+.basic-box img {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  top : 0;
+  
+}
+
+.basic-box:hover img {
+  opacity: 1;
+  transition: ease-in 0.2s;
+  
+}
+
+.basic-box{
+  border: 3px solid #e2e2e2;
+  text-align: center;
+  height: 278px;
+  font-size: 4em;
+  line-height: 2em;
+  font-variation-settings: 'WMX2' 473.13;
+  position: relative;
+}
+
+.basic-box:hover {
+background-color: #EE964B;
+background-size: cover;
+}
+
+a:hover {
+  color:#222222 ;
+  z-index: 9999999;
+  visibility: 1;
+}
+
+a {
+  color: #e2e2e2;
+  visibility: 0;
+}
+
+.letters {
+  font-size: 30pt;
+}
+ 
+.letters hover {
+  display: none;
+  z-index: -9999999;
+}
+
+.abcontainer{
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 25px;
+}
+
+.box-filter{
+  display: none;
+}
+
+#beachbreak:target ~ .reef{
+    display: none;
+}
+
+
+#reef:target ~ .beachbreak{
+    display: none;
+}
+
+#all:target ~ .beachbreak, .reef{
+    display: block;
+}
